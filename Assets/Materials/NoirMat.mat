@@ -124,14 +124,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_0120db06a0dc41b283c721792904e324: 0.2750002
-    - Vector1_03e1689afd0f4b5aad2be6ee336bd9a5: -84.199554
+    - Vector1_0120db06a0dc41b283c721792904e324: 0.25
+    - Vector1_03e1689afd0f4b5aad2be6ee336bd9a5: 0
     - Vector1_0d23d71400934614aaa085c04c8499cc: 0
-    - Vector1_1: 54.000046
+    - Vector1_1: 0
     - Vector1_14e872e13c1e4db786d44be519b1b6f2: -1.6
     - Vector1_1d324ace9dc742029061531637932482: -10.32
-    - Vector1_2: 0
-    - Vector1_203ef2848132419a9d56bb482e52fb91: 2.5999975
+    - Vector1_2: 0.5
+    - Vector1_203ef2848132419a9d56bb482e52fb91: 0
     - Vector1_287a9777aee54dcdaf93b16aab3a28c8: -0.183
     - Vector1_3: 0.05
     - Vector1_3664f60a7404495bb07068e413b42271: 14.81
@@ -139,30 +139,30 @@ Material:
     - Vector1_4569d60c616b48b5b1226bf32e23e7a9: -1.95
     - Vector1_4d42432b75d2488baf6f95c1eff3566e: 10
     - Vector1_5: -0.9
-    - Vector1_528084098f534ea1b2fbeadc2712d101: 0.07900221
+    - Vector1_528084098f534ea1b2fbeadc2712d101: 0.5
     - Vector1_6: 0
     - Vector1_63bb13fe162b450e89e0ac5c3d9f572d: 12.21
     - Vector1_6b6e547326784c7c968190dfbb50ff93: 0.421
     - Vector1_7: -0
     - Vector1_728701ffa013419197c39fbf9990e26f: 1
     - Vector1_7668172d952a48b9b02b236b58117f75: 0.019
-    - Vector1_7a69228fbe514d9ebc7f4480fddeee54: 0.85000014
+    - Vector1_7a69228fbe514d9ebc7f4480fddeee54: 0.5
     - Vector1_8: 0.02
-    - Vector1_8f2a722eae654c6da32763b310cf1455: 0.8199997
-    - Vector1_9bbade2c50084f879c29c9896bf7ef6d: 0.6399994
+    - Vector1_8f2a722eae654c6da32763b310cf1455: 0.5
+    - Vector1_9bbade2c50084f879c29c9896bf7ef6d: 0
     - Vector1_9d63b3cd9a47471188ce2fbe41097dd2: -1
     - Vector1_a5b1dc61bf844136a37670d757ac2493: -3.64
-    - Vector1_a7fdcc8ed89e4d0eabc04d5e00552952: 0.29800045
+    - Vector1_a7fdcc8ed89e4d0eabc04d5e00552952: 0.5
     - Vector1_ae01daeb404c42288cdabeabe1f7ad4c: -1
     - Vector1_ae01daeb404c42288cdabeabe1f7ad4c_1: 0
     - Vector1_b09de0e6034d4ab7a28fddc65e31d72d: 0.03
     - Vector1_b8b28e79747b47838e90b3ed724a694c: -5.76
     - Vector1_d4539b54eb4e4be0977a00906afabaf0: -0.3
     - Vector1_df53333a07274453b6ab6556f509b48b: -70.1
-    - Vector1_e012f4558e9d4079bec2b197440a2cc8: 5.4000044
+    - Vector1_e012f4558e9d4079bec2b197440a2cc8: 0
     - Vector1_f963e9bd3ab44e0c9a872ec38dc7f084: -0.77
     - Vector1_f963e9bd3ab44e0c9a872ec38dc7f084_1: 0.02
-    - Vector1_fee1a354e2eb4aeba990541d192f2ea1: 0.8000002
+    - Vector1_fee1a354e2eb4aeba990541d192f2ea1: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

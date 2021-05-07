@@ -20,7 +20,7 @@ public class Potentiometer : MonoBehaviour
                 range = 0f;
             else if (range > 1f)
                 range = 1f;
-            RoleManager.Instance.rangeValues[Role] = range;
+            GameManager.Instance.rangeValues[Role] = range;
 
             if (range != oldRange && controlledObj != null)
                 controlledObj.SetRangeValue(range);
@@ -36,7 +36,10 @@ public class Potentiometer : MonoBehaviour
     [Range(0.001f, 1.000f)]
     public float stepIncrement = 0.05f;
     public int IdPot { get => _idPot; }
-    public Text roleText;
+
+    public GameObject roleTextParent;
+    
+    public Vector3 origPos;
     public Role Role
     {
         get => _role;
@@ -47,7 +50,7 @@ public class Potentiometer : MonoBehaviour
             {
                 DisplayRole();
                 GetControlledObjectParameter();
-                Range = RoleManager.Instance.rangeValues[Role];
+                Range = GameManager.Instance.rangeValues[Role];
             }
         }
     }
@@ -59,7 +62,10 @@ public class Potentiometer : MonoBehaviour
     private int _idPot = 0;
     private static int lastId;
     private Role _role;
-    private Sequence sequence;
+    private Sequence sequenceText;
+    private Sequence sequenceBG;
+    private Image bgText;
+    private Text roleText;
     #endregion
 
     #region Inputs
@@ -78,14 +84,22 @@ public class Potentiometer : MonoBehaviour
 
     private void Awake()
     {
-        if (roleText == null)
-            Debug.LogError("Potentiometer doesn't have a Role display text", this);
+        if (roleTextParent == null)
+            Debug.LogWarning("Potentiometer doesn't have a Role display text", this);
+        else
+        {
+            //On charge l'UI
+            bgText = roleTextParent.GetComponent<Image>();
+            roleText = roleTextParent.GetComponentInChildren<Text>();
+            origPos = roleTextParent.transform.localPosition;
+        }
 
         roleControl.performed += ctx => DrawNewRole();
 
         //Assigner un id unique
         lastId++;
         _idPot = lastId;
+
     }
 
     private void Update()
@@ -103,17 +117,27 @@ public class Potentiometer : MonoBehaviour
         if(this.Role != null)
             roleText.text = this.Role.roleName;
 
-        sequence.Kill();
-        sequence = DOTween.Sequence();
-        sequence.Append(roleText.DOFade(1f, 1.5f));
-        sequence.AppendInterval(10f);
-        sequence.Append(roleText.DOFade(0f, 1.5f));
+        if(roleTextParent != null)
+        {
+            sequenceText.Kill();
+            sequenceText = DOTween.Sequence();
+            sequenceText.Append(roleText.DOFade(1f, .5f));
+            sequenceText.AppendInterval(10f);
+            sequenceText.Append(roleText.DOFade(0f, 1.5f));
+
+            sequenceBG.Kill();
+            sequenceBG = DOTween.Sequence();
+            sequenceBG.Append(bgText.DOFade(0.6f, .5f));
+            sequenceBG.AppendInterval(10f);
+            sequenceBG.Append(bgText.DOFade(0f, 1.5f));
+
+        }
 
     }
 
     public void DrawNewRole()
     {
-        RoleManager.Instance.DrawRole(this);
+        GameManager.Instance.DrawRole(this);
     }
 
     public void GetControlledObjectParameter()

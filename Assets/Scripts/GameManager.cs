@@ -4,16 +4,20 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class RoleManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static RoleManager Instance { get => _instance; }
+    #region Public Fields
+    public static GameManager Instance { get => _instance; }
     public GameObject potentiometerParent;
     public Canvas canvas;
     public Dictionary<Role, float> rangeValues;
+    #endregion
 
-    private static RoleManager _instance;
+    #region Private Fields
+    private static GameManager _instance;
     private List<Role> roles;
     private List<Potentiometer> potentiometers;
+    #endregion
 
     private void Awake()
     {
@@ -51,12 +55,13 @@ public class RoleManager : MonoBehaviour
         DealRoles();
     }
 
+    #region Roles Management
     public void DrawRole(Potentiometer potMter)
     {
         Role tempRole = potMter.Role;
         potMter.Role = roles[0];
         roles.RemoveAt(0);
-        if(tempRole != null)
+        if (tempRole != null)
         {
             roles.Add(tempRole);
             roles.Shuffle();
@@ -75,13 +80,21 @@ public class RoleManager : MonoBehaviour
 
     public void RecoverRoles()
     {
-        for(int i = 0; i < potentiometers.Count; i++)
+        for (int i = 0; i < potentiometers.Count; i++)
         {
-            if(potentiometers[i].Role != null)
+            if (potentiometers[i].Role != null)
                 roles.Add(potentiometers[i].Role);
 
             potentiometers[i].Role = null;
         }
     }
+    #endregion
+
+    #region Gameflow Management
+    public void EndExpertise()
+    {
+        Debug.Log("End Expertise");
+    }
+    #endregion
 
 }
