@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[AddComponentMenu("PotentiometerConnect/Rot Z")]
 public class RotZConnect : PotentiometerConnect
 {
     #region Public Field
