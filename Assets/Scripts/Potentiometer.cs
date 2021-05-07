@@ -22,6 +22,9 @@ public class Potentiometer : MonoBehaviour
                 controlledObj.SetRangeValue(range);
         }
     }
+    public SpriteRenderer cursor;
+    public float minRotation = 55f;
+    public float maxRotation = -240f;
 
     public PotentiometerConnect controlledObj;
     public InputAction rangeControl;
@@ -58,6 +61,11 @@ public class Potentiometer : MonoBehaviour
     private void Update()
     {
         Range += rangeControl.ReadValue<float>() * stepIncrement;
+        if(cursor != null)
+            cursor.transform.localEulerAngles = 
+                new Vector3(cursor.transform.localEulerAngles.x, cursor.transform.localEulerAngles.y,
+                minRotation - 
+                (Mathf.Abs(maxRotation) + Mathf.Abs(minRotation)) * this.Range );
     }
 
     #region Unity Callbacks
