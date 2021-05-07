@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using DG.Tweening;
+using TypeReferences;
 
 public class Potentiometer : MonoBehaviour
 {
@@ -17,8 +20,9 @@ public class Potentiometer : MonoBehaviour
                 range = 0f;
             else if (range > 1f)
                 range = 1f;
+            Role.valueRange = range;
 
-            if (range != oldRange)
+            if (range != oldRange && controlledObj != null)
                 controlledObj.SetRangeValue(range);
         }
     }
@@ -28,34 +32,60 @@ public class Potentiometer : MonoBehaviour
 
     public PotentiometerConnect controlledObj;
     public InputAction rangeControl;
+    public InputAction roleControl;
     [Range(0.001f, 1.000f)]
     public float stepIncrement = 0.05f;
+    public int IdPot { get => _idPot; }
+    public Text roleText;
+    public Role Role
+    {
+        get => _role;
+        set
+        {
+            _role = value;
+            if (this.Role != null)
+            {
+                Range = _role.valueRange;
+                DisplayRole();
+                GetControlledObjectParameter();
+            }
+        }
+    }
     #endregion
 
     #region Private Fields
     private float range = 0.5f;
     private float oldRange;
+    private int _idPot = 0;
+    private static int lastId;
+    private Role _role;
+    private Sequence sequence;
     #endregion
 
     #region Inputs
     private void EnableInputs()
     {
         rangeControl.Enable();
+        roleControl.Enable();
     }
 
     private void DisableInputs()
     {
         rangeControl.Disable();
+        roleControl.Disable();
     }
     #endregion
 
     private void Awake()
     {
-        if (controlledObj == null)
-        {
-            Debug.LogError("Controlled object assigned does not implement IPotentiometerConnect. Please add a component with this interface.");
-            this.enabled = false;
-        }
+        if (roleText == null)
+            Debug.LogError("Potentiometer doesn't have a Role display text", this);
+
+        roleControl.performed += ctx => DrawNewRole();
+
+        //Assigner un id unique
+        lastId++;
+        _idPot = lastId;
     }
 
     private void Update()
@@ -66,6 +96,30 @@ public class Potentiometer : MonoBehaviour
                 new Vector3(cursor.transform.localEulerAngles.x, cursor.transform.localEulerAngles.y,
                 minRotation - 
                 (Mathf.Abs(maxRotation) + Mathf.Abs(minRotation)) * this.Range );
+    }
+
+    public void DisplayRole()
+    {
+        if(this.Role != null)
+            roleText.text = this.Role.roleName;
+
+        sequence.Kill();
+        sequence = DOTween.Sequence();
+        sequence.Append(roleText.DOFade(1f, 1.5f));
+        sequence.AppendInterval(10f);
+        sequence.Append(roleText.DOFade(0f, 1.5f));
+
+    }
+
+    public void DrawNewRole()
+    {
+        RoleManager.Instance.DrawRole(this);
+    }
+
+    public void GetControlledObjectParameter()
+    {
+        if (this.Role != null)
+            controlledObj = (PotentiometerConnect)GameObject.FindObjectOfType(this.Role.connectType.Type);
     }
 
     #region Unity Callbacks

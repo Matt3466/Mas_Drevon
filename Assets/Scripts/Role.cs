@@ -10,4 +10,5 @@ public class Role : ScriptableObject
     public string roleName;
     [Inherits(typeof(PotentiometerConnect))]
     [SerializeField] public TypeReference connectType;
+    public float valueRange = 0.5f;
 }
