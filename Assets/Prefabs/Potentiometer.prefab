@@ -82,7 +82,15 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Range Control
       m_Flags: 8
-  stepIncrement: 0.001
+  roleControl:
+    m_Name: Role Control
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ab455188-1e34-4922-88db-cfa170ec77c6
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  stepIncrement: 0.01
   roleText: {fileID: 0}
 --- !u!1 &8771598639308555815
 GameObject:

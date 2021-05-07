@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d837fa2d4b96f2f4ab6f67b0bb8eee10, type: 3}
-  m_Name: FengShui
+  m_Name: Role 7
   m_EditorClassIdentifier: 
-  roleName: "Ma\xEEtre FengShui"
+  roleName: Role 7
   connectType:
     GuidAssignmentFailed: 0
-    GUID: 
-    TypeNameAndAssembly: RotZConnect, Assembly-CSharp
+    GUID: f19a5cca62659ab4b84a9fcba557f0e0
+    TypeNameAndAssembly: Role7LerpLerp, Assembly-CSharp
     _suppressLogs: 0
+  valueRange: 0.5

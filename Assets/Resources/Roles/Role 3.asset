@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d837fa2d4b96f2f4ab6f67b0bb8eee10, type: 3}
-  m_Name: Geomancer 5
+  m_Name: Role 3
   m_EditorClassIdentifier: 
-  roleName: "G\xE9omancien"
+  roleName: Role 3
   connectType:
     GuidAssignmentFailed: 0
-    GUID: 
-    TypeNameAndAssembly: PosYConnect, Assembly-CSharp
+    GUID: db75883bf56b49941baecacf6df1115b
+    TypeNameAndAssembly: Role3LerpVoronoiVSGradientNoiseSol, Assembly-CSharp
     _suppressLogs: 0
   valueRange: 0.5
