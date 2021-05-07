@@ -20,7 +20,7 @@ public class Potentiometer : MonoBehaviour
                 range = 0f;
             else if (range > 1f)
                 range = 1f;
-            Role.valueRange = range;
+            RoleManager.Instance.rangeValues[Role] = range;
 
             if (range != oldRange && controlledObj != null)
                 controlledObj.SetRangeValue(range);
@@ -45,9 +45,9 @@ public class Potentiometer : MonoBehaviour
             _role = value;
             if (this.Role != null)
             {
-                Range = _role.valueRange;
                 DisplayRole();
                 GetControlledObjectParameter();
+                Range = RoleManager.Instance.rangeValues[Role];
             }
         }
     }

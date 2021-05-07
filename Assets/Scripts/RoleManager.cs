@@ -9,6 +9,7 @@ public class RoleManager : MonoBehaviour
     public static RoleManager Instance { get => _instance; }
     public GameObject potentiometerParent;
     public Canvas canvas;
+    public Dictionary<Role, float> rangeValues;
 
     private static RoleManager _instance;
     private List<Role> roles;
@@ -24,11 +25,15 @@ public class RoleManager : MonoBehaviour
         #endregion
 
         roles = new List<Role>();
+        rangeValues = new Dictionary<Role, float>();
 
         //Loading Roles
         foreach(Role role in Resources.LoadAll<Role>("Roles"))
         {
             roles.Add(role);
+            PotentiometerConnect connect = (PotentiometerConnect)GameObject.FindObjectOfType(role.connectType.Type);
+            connect.SetRangeValue(role.valueRange);
+            rangeValues.Add(role, role.valueRange);
         }
 
         roles.Shuffle();
