@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[AddComponentMenu("PotentiometerConnect/Rot Y")]
+[AddComponentMenu("PotentiometerConnect/Pos Y")]
 public class PosYConnect : PotentiometerConnect
 {
     #region Public Field
