@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="338.66666mm"
+   height="190.5mm"
+   viewBox="0 0 338.66666 190.5"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="potentiometer.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#474747"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="719.60471"
+     inkscape:cy="494.66919"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1276"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="250.8859,98.639462"
+       orientation="1,0"
+       id="guide850" />
+    <sodipodi:guide
+       position="231.37812,43.986979"
+       orientation="1,0"
+       id="guide854" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(146.84374,4.3604197)"
+     sodipodi:insensitive="true">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.4395833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M -146.84374,-4.3604197 H 191.82291 V 186.13958 h -338.66665 z"
+       id="rect5735"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 1">
+    <path
+       style="fill:none;stroke:#783f04;stroke-width:5.29167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 170.78854,58.208327 C 172.13501,22.831744 129.0487,18.423466 64.73268,28.811654"
+       id="path862"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\boitier.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <rect
+       style="fill:#f6b26b;fill-opacity:1;stroke:#783f04;stroke-width:1.26883;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect848"
+       width="83.653732"
+       height="84.987061"
+       x="128.96165"
+       y="58.826645"
+       ry="0.24495196"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\boitier.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <path
+       id="path832"
+       style="fill:#783f04;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:round"
+       d="M 202.00938,89.429161 A 31.220833,31.220833 0 0 1 170.78854,120.64999 31.220833,31.220833 0 0 1 139.56771,89.429161 31.220833,31.220833 0 0 1 170.78854,58.208328 31.220833,31.220833 0 0 1 202.00938,89.429161 Z"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\boitier.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <g
+       id="g877">
+      <path
+         id="path844"
+         style="fill:#ffe599;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:round"
+         d="M 202.00938,84.666658 A 31.220833,31.220833 0 0 1 170.78854,115.88746 31.220833,31.220833 0 0 1 139.56771,84.666658 31.220833,31.220833 0 0 1 170.78854,53.445825 31.220833,31.220833 0 0 1 202.00938,84.666658 Z" />
+      <path
+         style="fill:none;stroke:#783f04;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 156.31946,84.666642 H 139.56771"
+         id="path846" />
+    </g>
+    <rect
+       style="fill:#783f04;fill-opacity:1;stroke:#783f04;stroke-width:1.35588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect856"
+       width="83.593727"
+       height="12.815709"
+       x="128.97813"
+       y="143.83018"
+       ry="0.2799131"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\boitier.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#ddd9d8;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle860"
+       cx="146.86417"
+       cy="124.84377"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#ddd9d8;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle864"
+       cx="146.78218"
+       cy="122.5021"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path858"
+       cx="146.86417"
+       cy="120.16035"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#a61c00;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle860-3"
+       cx="93.174332"
+       cy="128.81255"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#a61c00;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle864-7"
+       cx="93.092346"
+       cy="126.47087"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+    <circle
+       style="fill:#cc4125;fill-opacity:1;stroke:none;stroke-width:1.93497;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path858-5"
+       cx="93.174332"
+       cy="124.12912"
+       r="10.672171"
+       inkscape:export-filename="D:\Users\Ewan\Documents\Projets\Mas_Drevon\Assets\Sprites\button_role.png"
+       inkscape:export-xdpi="183"
+       inkscape:export-ydpi="183" />
+  </g>
+</svg>
