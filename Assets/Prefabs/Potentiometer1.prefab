@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8771598639156214070}
   - component: {fileID: 8771598639156214071}
   m_Layer: 0
-  m_Name: Potentiometer
+  m_Name: Potentiometer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
