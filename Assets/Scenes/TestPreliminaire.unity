@@ -838,7 +838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521703158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85efac3a7c9a8c8498a4ae3d10201cf5, type: 3}
   m_Name: 
@@ -846,7 +846,7 @@ MonoBehaviour:
   Sol: {fileID: 2100000, guid: 8e1c423d5c3da9a44b0f18b1eea64b85, type: 2}
   Ciel: {fileID: 2100000, guid: 916af938679065d43b5caceacdbe913e, type: 2}
   Immeubles: {fileID: 2100000, guid: 10f5776a20d5b634c891572a7bb51a6b, type: 2}
-  solFlo: -0.73
+  solFlo: 0
   cielFlo: 0
   immeublesFlo: 0
 --- !u!4 &1521703160
