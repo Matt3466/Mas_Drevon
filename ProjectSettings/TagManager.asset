@@ -44,3 +44,6 @@ TagManager:
   - name: Potentiometer
     uniqueID: 4066398871
     locked: 0
+  - name: Fade
+    uniqueID: 3285070567
+    locked: 0

@@ -33,6 +33,7 @@ public class Potentiometer : MonoBehaviour
     public PotentiometerConnect controlledObj;
     public InputAction rangeControl;
     public InputAction roleControl;
+    public InputAction displayRole;
     [Range(0.001f, 1.000f)]
     public float stepIncrement = 0.05f;
     public int IdPot { get => _idPot; }
@@ -74,12 +75,14 @@ public class Potentiometer : MonoBehaviour
     {
         rangeControl.Enable();
         roleControl.Enable();
+        displayRole.Enable();
     }
 
     private void DisableInputs()
     {
         rangeControl.Disable();
         roleControl.Disable();
+        displayRole.Disable();
     }
     #endregion
 
@@ -97,6 +100,7 @@ public class Potentiometer : MonoBehaviour
         }
 
         roleControl.performed += ctx => DrawNewRole();
+        displayRole.performed += ctx => DisplayRole();
 
         //Assigner un id unique
         lastId++;

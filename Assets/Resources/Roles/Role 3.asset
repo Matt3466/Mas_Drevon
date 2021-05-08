@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d837fa2d4b96f2f4ab6f67b0bb8eee10, type: 3}
   m_Name: Role 3
   m_EditorClassIdentifier: 
-  roleName: Role 3
+  roleName: "G\xE9omancien"
   connectType:
     GuidAssignmentFailed: 0
     GUID: db75883bf56b49941baecacf6df1115b
