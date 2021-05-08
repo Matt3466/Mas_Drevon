@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject potentiometerParent;
     public Canvas canvas;
     public Dictionary<Role, float> rangeValues;
+    public Button restartButton;
     #endregion
 
     #region Private Fields
@@ -56,6 +57,17 @@ public class GameManager : MonoBehaviour
         DealRoles();
     }
 
+    public void DisplayAllPotentiometer(bool isDisplay)
+    {
+        foreach(Potentiometer potMtr in potentiometers)
+        {
+            if (isDisplay)
+                potMtr.transform.DOLocalMoveY(potMtr.origPos.y, .5f);
+            else
+                potMtr.transform.DOLocalMoveY(potMtr.origPos.y -1, .5f);
+        }
+    }
+
     #region Roles Management
     public void DrawRole(Potentiometer potMter)
     {
@@ -94,7 +106,14 @@ public class GameManager : MonoBehaviour
     #region Gameflow Management
     public void EndExpertise()
     {
-        Debug.Log("End Expertise");
+        foreach(Potentiometer potMter in potentiometers)
+        {
+            potMter.enabled = false;
+            potMter.transform.DOMoveY(potMter.origPos.y - 10 ,1.5f);
+        }
+        restartButton.enabled = true;
+        restartButton.GetComponent<Image>().enabled = true;
+
     }
     #endregion
 
