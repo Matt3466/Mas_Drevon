@@ -64,6 +64,7 @@ public class Potentiometer : MonoBehaviour
     private Role _role;
     private Sequence sequenceText;
     private Sequence sequenceBG;
+    private Sequence potMove;
     private Image bgText;
     private Text roleText;
     #endregion
@@ -84,6 +85,8 @@ public class Potentiometer : MonoBehaviour
 
     private void Awake()
     {
+        origPos = this.transform.localPosition;
+
         if (roleTextParent == null)
             Debug.LogWarning("Potentiometer doesn't have a Role display text", this);
         else
@@ -91,7 +94,6 @@ public class Potentiometer : MonoBehaviour
             //On charge l'UI
             bgText = roleTextParent.GetComponent<Image>();
             roleText = roleTextParent.GetComponentInChildren<Text>();
-            origPos = roleTextParent.transform.localPosition;
         }
 
         roleControl.performed += ctx => DrawNewRole();
@@ -122,16 +124,21 @@ public class Potentiometer : MonoBehaviour
             sequenceText.Kill();
             sequenceText = DOTween.Sequence();
             sequenceText.Append(roleText.DOFade(1f, .5f));
-            sequenceText.AppendInterval(10f);
+            sequenceText.AppendInterval(5f);
             sequenceText.Append(roleText.DOFade(0f, 1.5f));
 
             sequenceBG.Kill();
             sequenceBG = DOTween.Sequence();
-            sequenceBG.Append(bgText.DOFade(0.6f, .5f));
-            sequenceBG.AppendInterval(10f);
+            sequenceBG.Append(bgText.DOFade(1f, .5f));
+            sequenceBG.AppendInterval(5f);
             sequenceBG.Append(bgText.DOFade(0f, 1.5f));
 
-        }
+            potMove.Kill();
+            potMove = DOTween.Sequence();
+            potMove.Append(this.transform.DOLocalMoveY(origPos.y, .5f));
+            potMove.AppendInterval(5f);
+            potMove.Append(this.transform.DOLocalMoveY(origPos.y - 1, 1.5f));
+        } 
 
     }
 

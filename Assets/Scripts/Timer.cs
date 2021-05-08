@@ -48,6 +48,6 @@ public class Timer : MonoBehaviour
 
     public string TimerInMinutes()
     {
-        return string.Format("{0:00}:{1:00}", Mathf.FloorToInt((timeRemaining +1) / 60), Mathf.FloorToInt((timeRemaining+1) % 60));
+        return string.Format("{0:00} : {1:00}", Mathf.FloorToInt((timeRemaining +1) / 60), Mathf.FloorToInt((timeRemaining+1) % 60));
     }
 }
